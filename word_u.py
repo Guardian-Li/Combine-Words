@@ -3,6 +3,12 @@ import os
 from docxcompose.composer import Composer
 from docx import Document as Document_compose
 
+path="word"
+folder = os.path.exists(path)
+if not folder:
+    os.makedirs(path)
+    print("mk new folder:word")
+
 
 origin_word=[]
 
